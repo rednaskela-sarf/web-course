@@ -1,0 +1,110 @@
+body {
+	font-size: 16px;
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* HEADER*/
+#header-nav {
+	min-height: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #AAAAAA;
+	border-radius: 0px;
+}
+#header-nav .container {
+	width: 100%; /* override bootstrap width=750px effect*/
+}
+
+/* navbar brand section a + h1 (Food, LLC text/link)*/
+.navbar-brand {
+	height: 10%;
+	padding: 0px;
+}
+.navbar-brand a {
+	color: black;
+}
+.navbar-brand h1 {
+	margin: 0; /*applying 0 aligns it horiz. with a <button> element*/
+	font-weight: bold;
+/*	background-color: red;*/
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/* button styling */
+.navbar-toggle {
+	margin: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	/*default button color light grey*/
+	border-color: #DDDDDD;
+    background-color: #DDDDDD;
+}
+/* applies hover/focus effect to the button, border+icon receives dark grey color*/
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+	background-color: #777777;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	border-color: #777777;
+	background-color: #AAAAAA;
+}
+
+/* expandable button list*/
+#nav-list {
+	margin-top: 0; /* removes offset between <div class="navbar-header">*/
+	margin-bottom: 0;
+	background-color: #FFFFAA;
+}
+#nav-list a {
+	color: black;
+	font-weight: bold;
+}
+#nav-list a:hover {
+	background-color: #FFFF33; /*expandable menu item hover effect*/
+}
+
+/* content */
+#our-menu-header h2 {
+	text-transform: capitalize;
+	color: #000000;
+	font-weight: bold;
+}
+
+#tile {
+	background-color: #DDDDDD;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#tile-title {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/********** Large devices only - desktop **********/
+@media (min-width: 1200px) {
+	.navbar-header {
+		padding: 2%;
+	}
+}
+
+/********** Medium devices only - tablet **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+		.navbar-header {
+		padding: 2%;
+	}
+}
+
+/********** Small devices only **********/
+@media (max-width: 991px) {
+	.navbar-header {
+		padding: 4%;
+	}
+}
